@@ -345,24 +345,41 @@ li {
 /* Подключение шрифта*/
 /*======================================================================*/
 /*======================================================================*/
+/* Подключение шрифта*/
+/*======================================================================*/
+/*======================================================================*/
+@font-face {
+  font-family: "Saira";
+  font-display: swap;
+  src: url("../../fonts/Saira-Regular.woff2") format("woff2"), url("../../fonts/Saira-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Rye";
+  font-display: swap;
+  src: url("../../fonts/Rye-Regular.woff2") format("woff2"), url("../../fonts/Rye-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
 /* Core */
 html,
 body {
   height: 100%;
+  display: flex;
+  background-color: #292929;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.wrapper {
+.app {
   display: flex;
   flex-direction: column;
-  min-height: 100%;
-}
-
-.main {
-  flex: 1 0 auto;
-}
-
-.footer {
-  flex: 0 0 auto;
+  max-width: 480px;
+  margin: 0 auto;
 }
 
 .container {
@@ -374,5 +391,59 @@ body {
 /* header */
 /* footer */
 /* Main */
+.title {
+  font-family: Rye;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 39px;
+  line-height: 0;
+  margin: 20px 0;
+  color: #307040;
+  text-align: center;
+}
+
+.metrics {
+  font-family: Saira;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 38px;
+  color: #E1B96F;
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.btn {
+  width: 300px;
+  height: 80px;
+  background: #307040;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-family: Rye;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 39px;
+  line-height: 49px;
+  color: #1c1b1b;
+  cursor: pointer;
+  transition: opacity .3s linear;
+  margin: 35px auto;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.btn:active {
+  transform: translate(0, 1px);
+}
+
+.slider {
+  width: 100%;
+  height: 260px;
+  background-color: #241929;
+}
 
 /*# sourceMappingURL=main.css.map */
